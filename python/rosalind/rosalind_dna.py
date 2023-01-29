@@ -24,5 +24,5 @@ def cnt_nucleotide(str):
 
 cnt_nucleotide(test)
 
-# * String can directly be iterated as char array
-# * List can be remove and added by using remove() and append
+# String can directly be iterated as char array
+# List can be remove and added by using remove() and append()
