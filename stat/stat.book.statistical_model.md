@@ -2,7 +2,7 @@
 id: jodlzrswo0qsv97cu6edlnz
 title: Statistical_model
 desc: ''
-updated: 1674798240294
+updated: 1675083430578
 created: 1674635006250
 ---
 <font size="5"></font>
@@ -154,5 +154,69 @@ $rms_{error} = \sqrt{1-r^2}\times SD_{y} = 0.86 \times 2.81 \approx 2.43$</font>
 
 <font size="5"> $E(aces)=p(aces)\times n=\frac{1}{6}\times180=30$  
 $var(Aces)= SE^2=n\times SD^2 = 180 \times 1/6\times5/6=25$ </font>
+
+---
+
+![](./assets/images/2023-01-30-20-19-49.png)
+
+<font size="5">Fraction of times = Sn/n  
+$E(aces)=p(aces)\times \frac{n}{n}=\frac{1}{6}$  
+$var(Aces)= SE^2=\frac{1}{n}\times SD^2 = \frac{1}{250} \times 1/6\times5/6=\frac{1}{1800}$</font>
+
+---
+
+![](./assets/images/2023-01-30-20-26-43.png)
+
+<font size="5">For 100 draws the expected value is 25, 50, 25 for each number. SE for each is $5/2\sqrt{3}$, $5$, $5/2\sqrt{3}$  
+a) number of 2's  
+b)number of 5's </font>
+
+---
+
+![](./assets/images/2023-01-30-20-46-39.png)
+
+![](./assets/images/2023-01-30-20-46-58.png)
+
+![](./assets/images/2023-01-30-20-47-25.png)
+
+<font size="5">~~Parameter~~Model, which consist of parameters</font>
+
+---
+
+![](./assets/images/2023-01-30-20-49-12.png)
+
+<font size="5">
+1) unobservable, parameter
+2) unobservable, parameter  
+3) unobservable, random variable   
+4) unobservable, random variable (right = observable) 
+</font>
+
+---
+
+![](./assets/images/2023-01-30-20-52-17.png)
+
+<font size="5">
+observed value of a random variable
+</font>
+
+---
+
+![](./assets/images/2023-01-30-20-53-23.png)
+
+<font size="5">a)$\sum_{i=1}^{n}(x_{i}-\bar{x})=
+\sum_{i=1}^{n}x_{i} - n\times(x_{1}+...+x_{n})/n=
+(x_{1}+...+x_{n}) - (x_{1}+...+x_{n})=
+0$  
+b)$\sum_{i=1}^{n}(x_{i}-c)^2 =
+\sum_{i=1}^{n}(x_{i}-\bar{x})^2+(\bar{x}-c)^2 +2\times((-\bar{x}^2)+\bar{x}(x_{i}+c)-x_{i}c)
+=\sum_{i=1}^{n}(x_{i}-\bar{x})^2+n\times (\bar{x}-c)^2 +(-2n\bar{x}^2+2n\bar{x}c)+2(\bar{x}-c)n\bar{x}
+=\sum_{i=1}^{n}(x_{i}-\bar{x})^2+n\times (\bar{x}-c)^2$  
+c) as a function of c, $a+(y-c)^2$ is minimum when $y=c$ by taking derivatives  
+d) $\sum_{i=1}^nx_{i}^2=
+\sum_{i=1}^nx_{i}^2-\bar{x}^2+\bar{x}^2=
+-n\bar{x}^2+\sum_{i=1}^n(x_{i}-\bar{x})^2+2n\bar{x}^2=
+[\sum_{i=1}^n(x_{i}-\bar{x})^2]+n\bar{x}^2$
+</font>
 
 ---
