@@ -216,9 +216,9 @@ b. $ \sum_{i=1}^{n}(x_{i}-c)^2 =
 c. as a function of c, $a+(y-c)^2$ is minimum when $y=c$ by taking derivatives  
 
 d. $ \sum_{i=1}^nx_{i}^2=
-\sum_{i=1}^nx_{i}^2-\bar{x}^2+\bar{x}^2$$
+\sum_{i=1}^nx_{i}^2-\bar{x}^2+\bar{x}^2 $$
 =-n\bar{x}^2+\sum_{i=1}^n(x_{i}-\bar{x})^2+2n\bar{x}^2$$
-=[\sum_{i=1}^n(x_{i}-\bar{x})^2]+n\bar{x}^2$
+=[\sum_{i=1}^n(x_{i}-\bar{x})^2]+n\bar{x}^2 $
 </font>
 
 ---
