@@ -2,7 +2,7 @@
 id: jodlzrswo0qsv97cu6edlnz
 title: Statistical_model
 desc: ''
-updated: 1675086390083
+updated: 1675086495492
 created: 1674635006250
 ---
 <font size="5"></font>
@@ -204,15 +204,15 @@ observed value of a random variable
 
 ![](./assets/images/2023-01-30-20-53-23.png)
 
-<font size="5">$$\sum_{i=1}^{n}(x_{i}-\bar{x})=
+<font size="5">a $$\sum_{i=1}^{n}(x_{i}-\bar{x})=
 \sum_{i=1}^{n}x_{i} - n\times(x_{1}+...+x_{n})/n$$
 $$=(x_{1}+...+x_{n}) - (x_{1}+...+x_{n})=0$$  
-$$\sum_{i=1}^{n}(x_{i}-c)^2 =
+b $$\sum_{i=1}^{n}(x_{i}-c)^2 =
 \sum_{i=1}^{n}(x_{i}-\bar{x})^2+(\bar{x}-c)^2 +2\times((-\bar{x}^2)+\bar{x}(x_{i}+c)-x_{i}c)$$
 $$=\sum_{i=1}^{n}(x_{i}-\bar{x})^2+n\times (\bar{x}-c)^2 +(-2n\bar{x}^2+2n\bar{x}c)+2(\bar{x}-c)n\bar{x}
 =\sum_{i=1}^{n}(x_{i}-\bar{x})^2+n\times (\bar{x}-c)^2$$  
- as a function of c, $a+(y-c)^2$ is minimum when $y=c$ by taking derivatives  
-$$\sum_{i=1}^nx_{i}^2=
+c as a function of c, $a+(y-c)^2$ is minimum when $y=c$ by taking derivatives  
+d $$\sum_{i=1}^nx_{i}^2=
 \sum_{i=1}^nx_{i}^2-\bar{x}^2+\bar{x}^2$$
 $$=-n\bar{x}^2+\sum_{i=1}^n(x_{i}-\bar{x})^2+2n\bar{x}^2=
 [\sum_{i=1}^n(x_{i}-\bar{x})^2]+n\bar{x}^2$$
