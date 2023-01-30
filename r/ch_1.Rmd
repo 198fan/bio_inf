@@ -1,0 +1,68 @@
+---
+title: "Chapter 1"
+author: "Fauzi Akbar Nugroho 70012702"
+date: "2023-01-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+Sys.setlocale("LC_ALL","japanese_JAPAN")
+setwd("C:/Users/hailf/Documents/GitHub/bio_inf/r")
+```
+
+## Prerequisite
+```{r}
+library(tidyverse)
+```
+
+### Mapping of mpg data (relation between engine size and fuel efficiency)
+
+* mapping argument is always paired with aes()
+
+```{r}
+head(mpg)
+ggplot(data=mpg)+geom_point(mapping=aes(x=displ, y=hwy))
+```
+## Exercises
+```{r}
+# ggplot(data=mpg)
+# ncol(mpg)
+# nrow(mpg)
+# ?mpg #type of drive train
+# ggplot(data=mpg)+geom_point(mapping=aes(x=hwy, y= cyl))
+# ggplot(data=mpg)+geom_point(mapping=aes(x=class, y= drv))
+# not useful because it can be easily known without the data
+```
+```{r}
+ggplot(data=mpg)+geom_point(mapping=aes(x=displ, y=hwy, color=class))
+# other than color, there are size, alpha, shape
+```
+## Exercises
+```{r}
+# ggplot(data=mpg)+geom_point(mapping=aes(x=displ, y=hwy, color="blue"))
+# color dont convey information about variable, need to be outside aes()
+# Categorical: manufacturer, model, year, cyl, trans, drv, fl, class
+# Continuous: hwy, cty, displ
+ggplot(data=mpg)+geom_point(mapping=aes(x=displ, y=hwy, color=cty), stroke=2)
+# Continuous variable is diplayed as gradient
+# stroke argument modify width of border
+```
+### Facets
+
+```{r}
+ggplot(data=mpg)+geom_point(mapping=aes(x=displ, y=hwy))+facet_wrap(~class, nrow=2)
+# Should be discrete
+```
+```{r}
+ggplot(data=mpg)+geom_point(mapping=aes(x=displ, y=hwy))+facet_grid(drv~cyl)
+# facet grid for 2 variable
+```
+## Exercises
+```{r}
+ggplot(data = mpg) +
+geom_point(mapping = aes(x = drv, y = cyl))
+```
+
+
+
